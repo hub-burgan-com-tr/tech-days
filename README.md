@@ -4,7 +4,7 @@ Bu uygulama Tech Days kapsamında Dapr'ın hızlı bir şekilde sunumu yapılmas
 
 ## Uygulamanın local de çalıştırılması
 
-Bu uygulamanın kendi bilgisayarınız da (local) çalıştırılması için tavsiye ettiğim ilk yöntem 1. Seçenekde detaylarını anlattığım "seld-hosted" metodudur. Ayrıca docker compose dosyalarını da hazırlamaya çalıştım fakat pek test edebilme fırsatım olmadı
+Bu uygulamanın kendi bilgisayarınız da (local) çalıştırılması için tavsiye ettiğim ilk yöntem 1. Seçenekde detaylarını anlattığım "self-hosted" metodudur. Ayrıca docker compose dosyalarını da hazırlamaya çalıştım fakat pek test edebilme fırsatım olmadı. Bu yüzden docker dosyalarıyla çalışmadan önce sizlerinde kontrol etmesinde fayda vardır.
 
 
 ### 1. Seçenek - CLI üzerinden self-hosted Çalıştırmak
