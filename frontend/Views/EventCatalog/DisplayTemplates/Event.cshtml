@@ -1,0 +1,15 @@
+﻿@model Eburgan.Frontend.Models.Api.Event
+<tr>
+    <td>
+        @Model.Name
+    </td>
+    <td>
+        @Model.Artist
+    </td>
+    <td class="bold big">
+        @Model.Price TL
+    </td>
+    <td>
+        <a class="btn-primary" type="button" asp-action="Detail" asp-route-eventId="@Model.EventId">Detay</a>
+    </td>
+</tr>
