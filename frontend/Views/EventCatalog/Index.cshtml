@@ -1,0 +1,28 @@
+﻿@model Eburgan.Frontend.Models.View.EventListModel
+
+<div class="row">
+    @if (Model.Events.Count() == 0)
+    {
+        <text>Sepetinizde urun bulunmamaktadir.</text>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr class="columnHeader">
+                    <th>Şirket Adı</th>
+                    <th>Kod</th>
+                    <th>Fiyat</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayFor(m => m.Events)
+            </tbody>
+        </table>
+    }
+</div>
+
+@section Widget {
+    <partial name="_ShoppingCartWidget" model="@Model.NumberOfItems" />
+}

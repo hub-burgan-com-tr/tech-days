@@ -1,0 +1,25 @@
+﻿@model Eburgan.Frontend.Models.View.BasketLineViewModel
+
+<tr>
+    <td>@Model.EventName</td>
+    <td>@Model.Date.DateTime.ToShortDateString()</td>
+    <td class="bold">@Model.Price TL</td>
+    <td>
+        <form asp-action="UpdateLine">
+            <input type="hidden" name="LineId" value="@Model.LineId" />
+            <select name="TicketAmount" class="w-25" asp-for="@Model.Quantity">
+                @for (int i = 0; i < 51; i++)
+                {
+                    <option value="@i">@i</option>   
+                }
+            </select>
+            <button type="submit" class="filterButton">Güncelle</button>
+        </form>
+    </td>
+    <td class="bold big">@(Model.Price * Model.Quantity) TL</td>
+    <td>
+        <a asp-action="RemoveLine" asp-route-lineId="@Model.LineId">
+            <img class="cancelIcon" src="~/img/times.svg" />
+        </a>
+    </td>
+</tr>
